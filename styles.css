@@ -1,0 +1,98 @@
+header{
+    padding: 10px;
+    display: flex;
+    background-color: aquamarine;
+    justify-content: space-between;
+    align-items: center;
+    animation-name: headanim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+header .headSub{
+    display: flex;
+    justify-content: center;
+}
+header .headSub h3{
+    size:5px;
+}
+header .headSub img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    margin: 5px;
+}
+.welcomeMsg{
+    background-color: rgba(87, 199, 105, 0.664);
+    margin:0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: welmsganim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.welcomeMsg a{
+    text-decoration: none;
+    border: 5px grey;
+    background-color: rgb(49, 218, 91);
+    border-radius: 10px;
+}
+main .gridContainer{
+    background-color: rgba(61, 180, 140, 0.623);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,2fr));
+}
+main .gridContainer .items{
+    margin:5px;
+    height: 200px; ;
+    border: 1px solid gainsboro;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 2ms;
+}
+main .gridContainer .items:hover{
+    height: 300px;
+    transform: rotateY(360deg);
+    transform: rotate(360deg);
+    background-color: rgb(75, 110, 99);
+}
+@keyframes welmsganim{
+    0%{
+       
+        background-color: rgba(87, 199, 105, 0.664); 
+    }
+    33%{
+        left:200px;
+        background-color:antiquewhite;
+    }
+    66%{
+        background-color: darkolivegreen;
+    }
+    100%{
+        background-color:lightsteelblue;
+        left:20px;
+        
+    }
+}
+@keyframes headanim{
+    from{
+       font-size: 10px; 
+    }
+    to{
+        font-size: 15px; 
+    }
+}
+
+
+
